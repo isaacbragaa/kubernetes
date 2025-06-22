@@ -1,1 +1,18 @@
-# App do NFS
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nfs-storage
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/isaacbragaa/kubernetes.git'
+    targetRevision: HEAD
+    path: nfs/pv
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
