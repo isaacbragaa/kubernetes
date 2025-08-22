@@ -10,8 +10,8 @@ O ambiente é baseado em:
 
 
 ## Estrutura
-- [prov](prov/README.md) → Manifestos YAML para PV, PVC, StorageClass e StatefulSet PostgreSQL.  
-- [scripts](scripts/README.md) → Scripts de instalação e configuração do NFS Server e MicroK8s. Mas pode usar comando por comando, caso dê problema o script
+- [/prov](prov/README.md) → Manifestos YAML para PV, PVC, StorageClass e StatefulSet PostgreSQL.  
+- [/scripts](scripts/README.md) → Scripts de instalação e configuração do NFS Server e MicroK8s. Mas pode usar comando por comando, caso dê problema o script
 
 
 
